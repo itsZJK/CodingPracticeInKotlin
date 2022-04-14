@@ -11,6 +11,11 @@ dependencyResolutionManagement {
     google()
     mavenCentral()
   }
+//  defaultLibrariesExtensionName.set("deps")
 }
 rootProject.name = "CodingPracticeInKotlin"
 include ':app'
+
+// Gradle 7 新的依赖管理方式，目前是实验性质的，因此需要手动配置，7.4 以上的版本无需配置
+enableFeaturePreview("VERSION_CATALOGS")
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
